@@ -1,0 +1,8 @@
+# Directories to ignore
+/build/
+/packages/
+/pkgscripts-ng/
+/toolchain/
+/toolkit_tarballs/
+
+# Files to ignore

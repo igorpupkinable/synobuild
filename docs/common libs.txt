@@ -1,0 +1,631 @@
+dbd/libdbdsqlite3.so
+ecryptfs/libecryptfs_key_mod_passphrase.so
+gconv/ANSI_X3.110.so
+gconv/ARMSCII-8.so
+gconv/ASMO_449.so
+gconv/BIG5HKSCS.so
+gconv/BIG5.so
+gconv/BRF.so
+gconv/CP10007.so
+gconv/CP1125.so
+gconv/CP1250.so
+gconv/CP1251.so
+gconv/CP1252.so
+gconv/CP1253.so
+gconv/CP1254.so
+gconv/CP1255.so
+gconv/CP1256.so
+gconv/CP1257.so
+gconv/CP1258.so
+gconv/CP737.so
+gconv/CP770.so
+gconv/CP771.so
+gconv/CP772.so
+gconv/CP773.so
+gconv/CP774.so
+gconv/CP775.so
+gconv/CP932.so
+gconv/CSN_369103.so
+gconv/CWI.so
+gconv/DEC-MCS.so
+gconv/EBCDIC-AT-DE-A.so
+gconv/EBCDIC-AT-DE.so
+gconv/EBCDIC-CA-FR.so
+gconv/EBCDIC-DK-NO-A.so
+gconv/EBCDIC-DK-NO.so
+gconv/EBCDIC-ES-A.so
+gconv/EBCDIC-ES.so
+gconv/EBCDIC-ES-S.so
+gconv/EBCDIC-FI-SE-A.so
+gconv/EBCDIC-FI-SE.so
+gconv/EBCDIC-FR.so
+gconv/EBCDIC-IS-FRISS.so
+gconv/EBCDIC-IT.so
+gconv/EBCDIC-PT.so
+gconv/EBCDIC-UK.so
+gconv/EBCDIC-US.so
+gconv/ECMA-CYRILLIC.so
+gconv/EUC-CN.so
+gconv/EUC-JISX0213.so
+gconv/EUC-JP-MS.so
+gconv/EUC-JP.so
+gconv/EUC-KR.so
+gconv/EUC-TW.so
+gconv/GB18030.so
+gconv/GBBIG5.so
+gconv/GBGBK.so
+gconv/GBK.so
+gconv/GEORGIAN-ACADEMY.so
+gconv/GEORGIAN-PS.so
+gconv/GOST_19768-74.so
+gconv/GREEK7-OLD.so
+gconv/GREEK7.so
+gconv/GREEK-CCITT.so
+gconv/HP-GREEK8.so
+gconv/HP-ROMAN8.so
+gconv/HP-ROMAN9.so
+gconv/HP-THAI8.so
+gconv/HP-TURKISH8.so
+gconv/IBM037.so
+gconv/IBM038.so
+gconv/IBM1004.so
+gconv/IBM1008_420.so
+gconv/IBM1008.so
+gconv/IBM1025.so
+gconv/IBM1026.so
+gconv/IBM1046.so
+gconv/IBM1047.so
+gconv/IBM1097.so
+gconv/IBM1112.so
+gconv/IBM1122.so
+gconv/IBM1123.so
+gconv/IBM1124.so
+gconv/IBM1129.so
+gconv/IBM1130.so
+gconv/IBM1132.so
+gconv/IBM1133.so
+gconv/IBM1137.so
+gconv/IBM1140.so
+gconv/IBM1141.so
+gconv/IBM1142.so
+gconv/IBM1143.so
+gconv/IBM1144.so
+gconv/IBM1145.so
+gconv/IBM1146.so
+gconv/IBM1147.so
+gconv/IBM1148.so
+gconv/IBM1149.so
+gconv/IBM1153.so
+gconv/IBM1154.so
+gconv/IBM1155.so
+gconv/IBM1156.so
+gconv/IBM1157.so
+gconv/IBM1158.so
+gconv/IBM1160.so
+gconv/IBM1161.so
+gconv/IBM1162.so
+gconv/IBM1163.so
+gconv/IBM1164.so
+gconv/IBM1166.so
+gconv/IBM1167.so
+gconv/IBM12712.so
+gconv/IBM1364.so
+gconv/IBM1371.so
+gconv/IBM1388.so
+gconv/IBM1390.so
+gconv/IBM1399.so
+gconv/IBM16804.so
+gconv/IBM256.so
+gconv/IBM273.so
+gconv/IBM274.so
+gconv/IBM275.so
+gconv/IBM277.so
+gconv/IBM278.so
+gconv/IBM280.so
+gconv/IBM281.so
+gconv/IBM284.so
+gconv/IBM285.so
+gconv/IBM290.so
+gconv/IBM297.so
+gconv/IBM420.so
+gconv/IBM423.so
+gconv/IBM424.so
+gconv/IBM437.so
+gconv/IBM4517.so
+gconv/IBM4899.so
+gconv/IBM4909.so
+gconv/IBM4971.so
+gconv/IBM500.so
+gconv/IBM5347.so
+gconv/IBM803.so
+gconv/IBM850.so
+gconv/IBM851.so
+gconv/IBM852.so
+gconv/IBM855.so
+gconv/IBM856.so
+gconv/IBM857.so
+gconv/IBM858.so
+gconv/IBM860.so
+gconv/IBM861.so
+gconv/IBM862.so
+gconv/IBM863.so
+gconv/IBM864.so
+gconv/IBM865.so
+gconv/IBM866NAV.so
+gconv/IBM866.so
+gconv/IBM868.so
+gconv/IBM869.so
+gconv/IBM870.so
+gconv/IBM871.so
+gconv/IBM874.so
+gconv/IBM875.so
+gconv/IBM880.so
+gconv/IBM891.so
+gconv/IBM901.so
+gconv/IBM902.so
+gconv/IBM9030.so
+gconv/IBM903.so
+gconv/IBM904.so
+gconv/IBM905.so
+gconv/IBM9066.so
+gconv/IBM918.so
+gconv/IBM921.so
+gconv/IBM922.so
+gconv/IBM930.so
+gconv/IBM932.so
+gconv/IBM933.so
+gconv/IBM935.so
+gconv/IBM937.so
+gconv/IBM939.so
+gconv/IBM943.so
+gconv/IBM9448.so
+gconv/IEC_P27-1.so
+gconv/INIS-8.so
+gconv/INIS-CYRILLIC.so
+gconv/INIS.so
+gconv/ISIRI-3342.so
+gconv/ISO_10367-BOX.so
+gconv/ISO_11548-1.so
+gconv/ISO-2022-CN-EXT.so
+gconv/ISO-2022-CN.so
+gconv/ISO-2022-JP-3.so
+gconv/ISO-2022-JP.so
+gconv/ISO-2022-KR.so
+gconv/ISO_2033.so
+gconv/ISO_5427-EXT.so
+gconv/ISO_5427.so
+gconv/ISO_5428.so
+gconv/ISO646.so
+gconv/ISO_6937-2.so
+gconv/ISO_6937.so
+gconv/ISO8859-10.so
+gconv/ISO8859-11.so
+gconv/ISO8859-13.so
+gconv/ISO8859-14.so
+gconv/ISO8859-15.so
+gconv/ISO8859-16.so
+gconv/ISO8859-1.so
+gconv/ISO8859-2.so
+gconv/ISO8859-3.so
+gconv/ISO8859-4.so
+gconv/ISO8859-5.so
+gconv/ISO8859-6.so
+gconv/ISO8859-7.so
+gconv/ISO8859-8.so
+gconv/ISO8859-9E.so
+gconv/ISO8859-9.so
+gconv/ISO-IR-197.so
+gconv/ISO-IR-209.so
+gconv/JOHAB.so
+gconv/KOI8-R.so
+gconv/KOI8-RU.so
+gconv/KOI-8.so
+gconv/KOI8-T.so
+gconv/KOI8-U.so
+gconv/LATIN-GREEK-1.so
+gconv/LATIN-GREEK.so
+gconv/libCNS.so
+gconv/libGB.so
+gconv/libISOIR165.so
+gconv/libJIS.so
+gconv/libJISX0213.so
+gconv/libKSC.so
+gconv/MAC-CENTRALEUROPE.so
+gconv/MACINTOSH.so
+gconv/MAC-IS.so
+gconv/MAC-SAMI.so
+gconv/MAC-UK.so
+gconv/MIK.so
+gconv/NATS-DANO.so
+gconv/NATS-SEFI.so
+gconv/PT154.so
+gconv/RK1048.so
+gconv/SAMI-WS2.so
+gconv/SHIFT_JISX0213.so
+gconv/SJIS.so
+gconv/T.61.so
+gconv/TCVN5712-1.so
+gconv/TIS-620.so
+gconv/TSCII.so
+gconv/UHC.so
+gconv/UNICODE.so
+gconv/UTF-16.so
+gconv/UTF-32.so
+gconv/UTF-7.so
+gconv/VISCII.so
+gio/modules/libgiognutls.so
+gio/modules/libgiolibproxy.so
+gio/modules/libgvfsdbus.so
+iptables/libip6t_icmp6.so
+iptables/libip6t_LOG.so
+iptables/libipt_DNAT.so
+iptables/libipt_icmp.so
+iptables/libipt_LOG.so
+iptables/libipt_MASQUERADE.so
+iptables/libipt_REDIRECT.so
+iptables/libipt_SNAT.so
+iptables/libxt_conntrack.so
+iptables/libxt_geoip.so
+iptables/libxt_iprange.so
+iptables/libxt_limit.so
+iptables/libxt_mac.so
+iptables/libxt_MARK.so
+iptables/libxt_multiport.so
+iptables/libxt_NFQUEUE.so
+iptables/libxt_policy.so
+iptables/libxt_set.so
+iptables/libxt_standard.so
+iptables/libxt_state.so
+iptables/libxt_TCPMSS.so
+iptables/libxt_tcp.so
+iptables/libxt_udp.so
+libnfsidmap/nsswitch.so
+libnfsidmap/static.so
+libnfsidmap/synomap.so
+modules/af_key.ko
+modules/ah4.ko
+modules/ah6.ko
+modules/bonding.ko
+modules/bsd_comp.ko
+modules/cdc-acm.ko
+modules/cdc_ether.ko
+modules/cls_fw.ko
+modules/cls_u32.ko
+modules/cryptodev.ko
+modules/ecryptfs.ko
+modules/esp4.ko
+modules/esp6.ko
+modules/fat.ko
+modules/gre.ko
+modules/hfsplus.ko
+modules/l2tp_core.ko
+modules/l2tp_ppp.ko
+modules/loop.ko
+modules/nf_conntrack_pptp.ko
+modules/nf_conntrack_proto_gre.ko
+modules/nf_nat_pptp.ko
+modules/nf_nat_proto_gre.ko
+modules/ppp_async.ko
+modules/ppp_deflate.ko
+modules/ppp_mppe.ko
+modules/pppoe.ko
+modules/pppox.ko
+modules/pptp.ko
+modules/sch_htb.ko
+modules/sch_sfq.ko
+modules/synobios.ko
+modules/tun.ko
+modules/usbip-core.ko
+modules/usbip-host.ko
+modules/usblp.ko
+modules/usbnet.ko
+modules/usbserial.ko
+modules/vfat.ko
+modules/xt_geoip.ko
+modules/xt_iprange.ko
+modules/xt_limit.ko
+modules/xt_mac.ko
+modules/xt_multiport.ko
+openvpn/openvpn-down-root.so
+postgresql/plpgsql.so
+pppd/pppol2tp.so
+samba/ldb/asq.so
+samba/ldb/paged_searches.so
+samba/ldb/rdn_name.so
+samba/ldb/sample.so
+samba/ldb/server_sort.so
+samba/ldb/skel.so
+samba/ldb/tdb.so
+sasl2/liblogin.so
+sasl2/libplain.so
+security/pam_deny.so
+security/pam_rootok.so
+security/pam_syno_autoblock.so
+security/pam_syno_log_fail.so
+security/pam_syno_log_success.so
+security/pam_syno_privilege.so
+security/pam_syno_root_use_admin_password.so
+security/pam_unix.so
+security/pam_winbind.so
+syslog-ng/libaffile.so
+syslog-ng/libafprog.so
+syslog-ng/libafsql.so
+syslog-ng/libafuser.so
+syslog-ng/libbasicfuncs.so
+syslog-ng/libconfgen.so
+syslog-ng/libcryptofuncs.so
+syslog-ng/libcsvparser.so
+syslog-ng/libdbparser.so
+syslog-ng/libjson-plugin.so
+syslog-ng/liblinux-kmsg-format.so
+syslog-ng/libsyslogformat.so
+syslog-ng/libsystem-source.so
+ld-linux-armhf.so.3 -> ld.so.1
+ld-linux.so.2 -> ld.so.1
+ld-linux.so.3 -> ld.so.1
+ld.so.1
+lib7z.so
+libaio.so -> libaio.so.1.0.1
+libaio.so.1 -> libaio.so.1.0.1
+libaio.so.1.0.1
+libanl.so.1
+libapparmor.so -> libapparmor.so.1.2.0
+libapparmor.so.1 -> libapparmor.so.1.2.0
+libapparmor.so.1.2.0
+libassuan.so -> libassuan.so.0.8.1
+libassuan.so.0 -> libassuan.so.0.8.1
+libassuan.so.0.8.1
+libattr.so -> libattr.so.1.1.0
+libattr.so.1 -> libattr.so.1.1.0
+libattr.so.1.1.0
+libaudioplayer.so
+libavahi-client.so.3
+libavahi-common.so.3
+libavahi-core.so.7
+libblkid.so -> libblkid.so.1.1.0
+libblkid.so.1 -> libblkid.so.1.1.0
+libblkid.so.1.1.0
+libcap-ng.so.0
+libcap.so -> libcap.so.2
+libcap.so.2 -> libcap.so.2.22
+libcap.so.2.22
+libcom_err.so.2 -> libcom_err.so.2.1
+libcom_err.so.2.1
+libcrypto.so -> libcrypto.so.1.1
+libcrypto.so.1.1
+libcrypt.so.1
+libc.so.6
+libcupsimage.so.2
+libcupsmime.so.1
+libcups.so.2
+libcurses.so -> libncurses.so
+libcursesw.so
+libdb-5.3.so
+libdbi.so -> libdbi.so.1.1.0
+libdbi.so.1 -> libdbi.so.1.1.0
+libdbi.so.1.1.0
+libdl.so.2
+libe2p.so.2 -> libe2p.so.2.3
+libe2p.so.2.3
+libevent-2.1.so.6 -> libevent-2.1.so.6.0.2
+libevent-2.1.so.6.0.2
+libevent_pthreads-2.1.so.6 -> libevent_pthreads-2.1.so.6.0.2
+libevent_pthreads-2.1.so.6.0.2
+libevent_pthreads.so -> libevent_pthreads-2.1.so.6.0.2
+libevent.so -> libevent-2.1.so.6.0.2
+libexportent.so
+libext2fs.so.2 -> libext2fs.so.2.4
+libext2fs.so.2.4
+libfindhost.so -> libfindhost.so.1
+libfindhost.so.1
+libfontconfig.so.1
+libform.so
+libfreeblpriv3.so
+libfreeradius-dhcp.so
+libfreeradius-eap.so
+libfreeradius-radius.so
+libfreeradius-server.so
+libgcc_s.so.1
+libgdbm_compat.so -> libgdbm_compat.so.4.0.0
+libgdbm_compat.so.4 -> libgdbm_compat.so.4.0.0
+libgdbm_compat.so.4.0.0
+libgoogleauth.so
+libgpg-error.so.0.33.1
+libgssapi_krb5.so -> libgssapi_krb5.so.2.2
+libgssapi_krb5.so.2 -> libgssapi_krb5.so.2.2
+libgssapi_krb5.so.2.2
+libgssglue.so -> libgssglue.so.1.0.0
+libgssglue.so.1 -> libgssglue.so.1.0.0
+libgssglue.so.1.0.0
+libgssrpc.so -> libgssrpc.so.4.2
+libgssrpc.so.4 -> libgssrpc.so.4.2
+libgssrpc.so.4.2
+libhwcontrol.so -> libhwcontrol.so.1
+libhwcontrol.so.1
+libinotifytools.so.0
+libiptc.so -> libiptc.so.0.0.0
+libiptc.so.0 -> libiptc.so.0.0.0
+libiptc.so.0.0.0
+libixml.so.11
+libjson.so -> libjson.so.1
+libjson.so.1
+libk5crypto.so -> libk5crypto.so.3.1
+libk5crypto.so.3 -> libk5crypto.so.3.1
+libk5crypto.so.3.1
+libkadm5clnt_mit.so -> libkadm5clnt_mit.so.12.0
+libkadm5clnt_mit.so.12 -> libkadm5clnt_mit.so.12.0
+libkadm5clnt_mit.so.12.0
+libkadm5srv_mit.so -> libkadm5srv_mit.so.12.0
+libkadm5srv_mit.so.12 -> libkadm5srv_mit.so.12.0
+libkadm5srv_mit.so.12.0
+libkdb5.so -> libkdb5.so.10.0
+libkdb5.so.10 -> libkdb5.so.10.0
+libkdb5.so.10.0
+libkeyutils.so.1
+libkmod.so -> libkmod.so.2.2.6
+libkmod.so.2 -> libkmod.so.2.2.6
+libkmod.so.2.2.6
+libkrb5.so -> libkrb5.so.3.3
+libkrb5.so.3 -> libkrb5.so.3.3
+libkrb5.so.3.3
+libkrb5support.so -> libkrb5support.so.0.1
+libkrb5support.so.0 -> libkrb5support.so.0.1
+libkrb5support.so.0.1
+liblzo2.so.2
+libmaxminddb.so -> libmaxminddb.so.0.0.7
+libmaxminddb.so.0 -> libmaxminddb.so.0.0.7
+libmaxminddb.so.0.0.7
+libmcrypt.so.4
+libmediaindex.so
+libmenu.so
+libmount.so.1 -> libmount.so.1.1.0
+libmount.so.1.1.0
+libmsgpackc.so.2 -> libmsgpackc.so.2.0.0
+libmsgpackc.so.2.0.0
+libm.so.6
+libnatpmp.so -> libnatpmp.so.1
+libnatpmp.so.1
+libncurses.so
+libnetsnmpagent.so.40
+libnetsnmphelpers.so.40
+libnetsnmpmibs.so.40
+libnetsnmp.so.40
+libnl-3.so -> libnl-3.so.200.26.0
+libnl-3.so.200 -> libnl-3.so.200.26.0
+libnl-3.so.200.26.0
+libnl-genl-3.so -> libnl-genl-3.so.200.26.0
+libnl-genl-3.so.200 -> libnl-genl-3.so.200.26.0
+libnl-genl-3.so.200.26.0
+libnl-route-3.so -> libnl-route-3.so.200.26.0
+libnl-route-3.so.200 -> libnl-route-3.so.200.26.0
+libnl-route-3.so.200.26.0
+libnl-xfrm-3.so -> libnl-xfrm-3.so.200.26.0
+libnl-xfrm-3.so.200 -> libnl-xfrm-3.so.200.26.0
+libnl-xfrm-3.so.200.26.0
+libnsl.so.1
+libnspr4.so
+libnss3.so
+libnss_dns.so.2
+libnss_files.so.2
+libnssutil3.so
+libnss_winbind.so.2
+libnss_wins.so.2
+libopencore-amrnb.so.0
+libopencore-amrwb.so.0
+libp7zip.so
+libpanel.so
+libplc4.so
+libplds4.so
+libplist.so.3 -> libplist.so.3.1.0
+libplist.so.3.1.0
+libpng.so -> libpng16.so
+libpopt.so -> libpopt.so.0.0.0
+libpopt.so.0 -> libpopt.so.0.0.0
+libpopt.so.0.0.0
+libprotobuf.so -> libprotobuf.so.17.0.0
+libprotobuf.so.17 -> libprotobuf.so.17.0.0
+libprotobuf.so.17.0.0
+libproxy.so -> libproxy.so.1
+libproxy.so.1 -> libproxy.so.1.0.0
+libproxy.so.1.0.0
+libpthread.so.0
+libpth.so -> libpth.so.20.0.27
+libpth.so.20 -> libpth.so.20.0.27
+libpth.so.20.0.27
+libqrencode.so -> libqrencode.so.3.3.1
+libqrencode.so.3 -> libqrencode.so.3.3.1
+libqrencode.so.3.3.1
+libresolv.so.2
+libroutersdk.so
+librt.so.1
+libsmime3.so
+libsodium.so
+libsoftokn3.so
+libsqlite3.so -> libsqlite3.so.0.8.6
+libsqlite3.so.0 -> libsqlite3.so.0.8.6
+libsqlite3.so.0.8.6
+libssh2.so -> libssh2.so.1.0.1
+libssh2.so.1 -> libssh2.so.1.0.1
+libssh2.so.1.0.1
+libssl3.so
+libssl.so -> libssl.so.1.1
+libssl.so.1.1
+libss.so.2 -> libss.so.2.0
+libss.so.2.0
+libsudo_util.so.0
+libsynoacl.so
+libsynocloudservice.so -> libsynocloudservice.so.1
+libsynocloudservice.so.1
+libsynodb.so
+libsynodbud.so
+libsynoddnsclient.so -> libsynoddnsclient.so.1
+libsynoddnsclient.so.1
+libsynofeasibilitycheck.so.1
+libsynoindex.so
+libsynoinstallcpp.so
+libsynolog.so.1
+libsynomount.so
+libsynomyds.so -> libsynomyds.so.1
+libsynomyds.so.1
+libsynoOTP.so
+libsynopkg.so -> libsynopkg.so.1
+libsynopkg.so.1
+libsynoportforward.so -> libsynoportforward.so.0
+libsynoportforward.so.0
+libsynoscemd.so -> libsynoscemd.so.1
+libsynoscemd.so.1
+libsynosmtp.so
+libsynosnmp.so.1
+libsynostoragemgmt.so
+libsynosyslog.so
+libsynoutils.so -> libsynoutils.so.1
+libsynoutils.so.1
+libsynovpnclient.so
+libsysfs.so -> libsysfs.so.2.0.1
+libsysfs.so.2 -> libsysfs.so.2.0.1
+libsysfs.so.2.0.1
+libulockmgr.so -> libulockmgr.so.1.0.1
+libulockmgr.so.1 -> libulockmgr.so.1.0.1
+libulockmgr.so.1.0.1
+libunrar.so
+libupnpclient.so
+libupnp.so.16
+libusb-0.1.so.4
+libusbip.so -> libusbip.so.0.0.1
+libusbip.so.0 -> libusbip.so.0.0.1
+libusbip.so.0.0.1
+libusbpp-0.1.so.4
+libutil.so.1
+libuuid.so -> libuuid.so.1.3.0
+libuuid.so.1 -> libuuid.so.1.3.0
+libuuid.so.1.3.0
+libvcdcom.so -> libvcdcom.so.0
+libvcdcom.so.0 -> libvcdcom.so.0.8.4
+libvcdcom.so.0.8.4
+libvcddec.so -> libvcddec.so.0
+libvcddec.so.0 -> libvcddec.so.0.8.4
+libvcddec.so.0.8.4
+libvcdenc.so -> libvcdenc.so.0
+libvcdenc.so.0 -> libvcdenc.so.0.8.4
+libvcdenc.so.0.8.4
+libwebapi-DSM5.so
+libwebapi-Network-Share.so
+libwebapi-ParameterChecker.so
+libwebapi.so
+libwpa_client.so
+libxapian.so -> libxapian.so.15.5.2
+libxapian.so.15 -> libxapian.so.15.5.2
+libxapian.so.15.5.2
+libxmlparse.so -> libxmlparse.so.1.2
+libxmlparse.so.1 -> libxmlparse.so.1.2
+libxmlparse.so.1.2
+libxmltok.so -> libxmltok.so.1.2
+libxmltok.so.1 -> libxmltok.so.1.2
+libxmltok.so.1.2
+rp-pppoe
+rsync
+sudoers.so
+uams_clrtxt.so
+uams_dhx2.so
+uams_dhx.so
+uams_guest.so
