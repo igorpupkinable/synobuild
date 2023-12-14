@@ -2,11 +2,13 @@
 !/packages/ExamplePackages/
 
 # Directories to ignore
-/build/
 /packages/
+/projects/
+/source/
 /toolchain/
 /toolkit_tarballs/*.dev/
 /toolkit_tarballs/*.env/
 
 # Files to ignore
 /toolkit_tarballs/*.t[gx]z
+/*.log*
