@@ -1,0 +1,4 @@
+[submodule "pkgscripts-ng"]
+	path = pkgscripts-ng
+	url = git@github.com:igorpupkinable/pkgscripts-ng.git
+	branch = master
