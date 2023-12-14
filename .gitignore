@@ -2,6 +2,8 @@
 /build/
 /packages/
 /toolchain/
-/toolkit_tarballs/
+/toolkit_tarballs/*.dev/
+/toolkit_tarballs/*.env/
 
 # Files to ignore
+/toolkit_tarballs/*.t[gx]z
