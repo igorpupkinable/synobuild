@@ -1,6 +1,8 @@
+# Exclusions
+!/packages/ExamplePackages/
+
 # Directories to ignore
 /build/
-!/packages/ExamplePackages/
 /packages/
 /toolchain/
 /toolkit_tarballs/*.dev/
