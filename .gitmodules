@@ -1,4 +1,8 @@
+[submodule "pkgscripts-ng"]
+	path = pkgscripts-ng
+	url = https://github.com/SynologyOpenSource/pkgscripts-ng.git
+	branch = master
 [submodule "packages/ExamplePackages"]
 	path = packages/ExamplePackages
-	url = git@github.com:SynologyOpenSource/ExamplePackages.git
+	url = https://github.com/SynologyOpenSource/ExamplePackages.git
 	branch = main
