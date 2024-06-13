@@ -1,8 +1,8 @@
 # Exclusions
-!/packages/ExamplePackages/
+#!/packages/ExamplePackages/
 
 # Directories to ignore
-/packages/
+#/packages/
 /projects/
 /source/
 /toolchain/
