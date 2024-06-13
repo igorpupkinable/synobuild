@@ -2,3 +2,7 @@
 	path = packages/ExamplePackages
 	url = https://github.com/SynologyOpenSource/ExamplePackages.git
 	branch = main
+[submodule "pkgscripts-ng"]
+	path = pkgscripts-ng
+	url = https://github.com/igorpupkinable/pkgscripts-ng.git
+	branch = master
