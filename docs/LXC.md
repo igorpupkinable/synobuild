@@ -5,7 +5,6 @@ $ lxc launch ubuntu:20.04 synobuild-focal --profile=synobuild --vm
 $ lxc exec synobuild-focal -- /bin/bash
 root@synobuild-focal:~$ passwd ubuntu
 root@synobuild-focal:~$ exit
-$ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
 ```
 
 # Create synobuild LXC container
@@ -15,6 +14,8 @@ $ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
 
 # Deploy Chroot Environment
 ```bash
+$ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
+$ git clone git@github.com:igorpupkinable/synobuild.git --depth=1 --branch=master --recurse-submodules ~/toolkit
 $ mkdir -p ~/toolkit/toolkit_tarballs/
 $ cd ~/toolkit/toolkit_tarballs/
 $ wget https://global.synologydownload.com/download/ToolChain/toolkit/7.2/base/base_env-7.2.txz
