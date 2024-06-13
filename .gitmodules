@@ -1,4 +1,4 @@
-[submodule "packages/ExamplePackages"]
+[submodule "ExamplePackages"]
 	path = packages/ExamplePackages
 	url = https://github.com/SynologyOpenSource/ExamplePackages.git
 	branch = main
