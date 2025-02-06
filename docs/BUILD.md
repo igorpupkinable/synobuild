@@ -1,21 +1,22 @@
 All pre-built binaries, headers, and libraries are under cross compiler sysroot in chroot environment.
 Sysroot is the default search path of a compiler, so **you do not need to provide -I or -L to CFLAGS or LDFLAGS**.
 If gcc cannot find header or library from the given path, it will then search `sysroot/usr/{lib,include}`.
-`/toolkit/build_env/ds.<platform>-<version>/usr/local/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/`
+Sysroot located in `~/toolkit/build_env/ds.<platform>-<version>/usr/local/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/`.
 
 ### Manual compilation
 ```shell
 $ lxc start synobuild-focal
 $ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
+$ cd ~/toolkit/source/
+$ wget -qO- https://nano-editor.org/dist/v8/nano-8.3.tar.gz | gunzip | tar xvf -
 $ schroot --chroot=armada38x
 $ export LANG=en_US.UTF-8
-$ cd /source/nano-7.2/
+$ cd nano-8.3/
 $ ./configure --with-platform-specific-flags WITH_PLATFORM_SPECIFIC=VARIABLES
 $ make
-$ make DESTDIR=/build/armada38x/nano-7.2 install
-$ exit
-To detach from the console, press: <ctrl>+a q
-$ lxc file pull synobuild-focal/home/ubuntu/build/ ~/projects/synobuild/ --recursive
+$ make DESTDIR=/home/ubuntu/toolkit/build/armada38x/rootfs/nano-8.3/ install
+$ exit [To detach the console, press: <ctrl>+a q]
+$ lxc file pull synobuild-focal/home/ubuntu/toolkit/build/armada38x/rootfs/nano-8.3/ build/armada38x/rootfs/ --recursive
 $ lxc stop synobuild-focal
 ```
 
