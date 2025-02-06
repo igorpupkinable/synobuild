@@ -2,6 +2,7 @@
 !/packages/ExamplePackages/
 
 # Directories to ignore
+#/docs/builds/
 /packages/
 /projects/
 /source/
@@ -10,5 +11,6 @@
 /toolkit_tarballs/*.env/
 
 # Files to ignore
+#/docs/MYDEVICES.md
 /toolkit_tarballs/*.t[gx]z
 /*.log*

@@ -1,67 +1,59 @@
-# Git
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_from_source
-```bash
-make configure
-./configure --prefix=/home/ubuntu/source/x86_64/rootfs/git/usr/local --without-expat --without-tcltk CC=/usr/bin/x86_64-linux-gnu-gcc-11 CPP=/usr/bin/x86_64-linux-gnu-cpp-11 CFLAGS='-g0 -O2 -s -Wno-unused-local-typedefs'
-make NO_GETTEXT=YesPlease all
-make NO_GETTEXT=YesPlease install
+All pre-built binaries, headers, and libraries are under cross compiler sysroot in chroot environment.
+Sysroot is the default search path of a compiler, so **you do not need to provide -I or -L to CFLAGS or LDFLAGS**.
+If gcc cannot find header or library from the given path, it will then search `sysroot/usr/{lib,include}`.
+`/toolkit/build_env/ds.<platform>-<version>/usr/local/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/`
+
+### Manual compilation
+```shell
+$ lxc start synobuild-focal
+$ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
+$ schroot -c armada38x
+$ export LANG=en_US.UTF-8
+$ cd /source/nano-7.2/
+$ ./configure --with-platform-specific-flags WITH_PLATFORM_SPECIFIC=VARIABLES
+$ make
+$ make DESTDIR=/build/armada38x/nano-7.2 install
+$ exit
+To detach from the console, press: <ctrl>+a q
+$ lxc file pull synobuild-focal/home/ubuntu/build/ ~/projects/synobuild/ --recursive
+$ lxc stop synobuild-focal
 ```
 
-# libunistring
-https://www.gnu.org/software/libunistring/
+#### Variables
+Most of variable values can be found in `/toolkit/build_env/ds.${platform}-${version}/{env.mak,env32/64.mak}`.
+
+- CC: path of gcc cross compiler.
+- CXX: path of g++ cross compiler.
+- LD: path of cross compiler linker.
+- CFLAGS: global cflags includes.
+- AR: path of cross compiler ar.
+- NM: path of cross compiler nm.
+- STRIP: path of cross compiler strip.
+- RANLIB: path of cross compiler ranlib.
+- OBJDUMP: path of cross compiler objdump.
+- LDFLAGS: global ldflags includes.
+- ConfigOpt: options for configure.
+- ARCH: processor architecture.
+- SYNO_PLATFORM: Synology platform.
+- DSM_SHLIB_MAJOR: major number of DSM (integer).
+- DSM_SHLIB_MINOR: minor number of DSM (integer).
+- DSM_SHLIB_NUM: build number of DSM (integer).
+- ToolChainSysRoot: cross compiler sysroot path.
+- SysRootPrefix: cross compiler sysroot concat with prefix /usr.
+- SysRootInclude: cross compiler sysroot concat with include_dir /usr/include.
+- SysRootLib: cross compiler sysroot concat with lib_dir /usr/lib.
+
+### Compilation settings
+#### Pre-built headers and projects
+Synology toolkit environment has included selected prebuild projects. You can **enter the chroot** and use following commands to check if needed header or project is provided by toolkit.
 ```bash
-./gitsub.sh pull
-
-with debug_info, not stripped
+(armada38x)ubuntu@synobuild-focal:~$ dpkg -l  # List all dpkg projects.
+(armada38x)ubuntu@synobuild-focal:~$ dpkg -L {project dev} # List project install files, e.g `dpkg -L synousb-armada38x-dev`
+(armada38x)ubuntu@synobuild-focal:~$ dpkg -S {header/library pattern} # Search header/library pattern, e.g. `dpkg -S libexif`
 ```
+Some open source projects require to use other projects' cross compiled product while building their own.
+For example, _python_ needs _libffi_ and _zlib_ during configuration stage. We need to provide those two project before building _python_.
+You can install the cross compiled product into the destination you want in build script.
+Please refer to [Compile Open Source Project: nmap](https://help.synology.com/developer-guide/examples/compile_nmap.html) for more information.
 
-# concurrencykit/ck
-https://github.com/concurrencykit/ck
-
-Fix configure file:
-```bash
-640,641c640
-< #COMPILER=`./.1 2> /dev/null`
-< COMPILER=gcc
----
-> COMPILER=`./.1 2> /dev/null`
-
-```
-```bash
-export CC=/usr/bin/arm-linux-gnueabihf-gcc
-export CFLAGS='-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs'
-./configure --prefix=/home/ubuntu/projects/rootfs/ck/usr/local --cores=2 --disable-sse --profile=arm --platform=armv7l
-make
-make install
-unset CC
-unset CFLAGS
-```
-
-# LuaJIT/LuaJIT
-https://github.com/LuaJIT/LuaJIT
-```bash
-make PREFIX=/home/ubuntu/projects/rootfs/LuaJIT/usr/local HOST_CC=i686-linux-gnu-gcc CROSS=arm-linux-gnueabihf- TARGET_CFLAGS="-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs"
-
-make PREFIX=/home/ubuntu/source/ipq806x/rootfs/LuaJIT/usr/local HOST_CC="gcc -m32" HOST_CFLAGS="-I/usr/include/" CROSS=/usr/local/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi- TARGET_CFLAGS="-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs"
-
-make install PREFIX=/home/ubuntu/projects/rootfs/LuaJIT/usr/local
-```
-
-# akopytov/sysbench
-https://github.com/akopytov/sysbench
-##### Skip MySQL
-```bash
-sudo apt install make automake libtool pkg-config libaio-dev
-./autogen.sh
-./configure --prefix=/home/ubuntu/projects/rootfs/sysbench/usr/local --with-system-luajit --with-system-ck --host=arm-linux-gnueabihf --without-mysql --with-gcc-arch=armv7-a CC=arm-linux-gnueabihf-gcc CFLAGS='-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs -Wl,-rpath=/usr/local/lib' PKG_CONFIG_PATH='/home/ubuntu/projects/rootfs/LuaJIT/usr/local/lib/pkgconfig:/home/ubuntu/projects/rootfs/ck/usr/local/lib/pkgconfig'
-
-./configure --prefix=/home/ubuntu/source/ipq806x/rootfs/sysbench/usr/local --with-system-luajit --with-system-ck --host=arm-unknown-linux-gnueabi --without-mysql --with-gcc-arch=armv7-a CC=/usr/local/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-gcc --with-sysroot=/usr/local/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot CFLAGS='-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs -Wl,-rpath=/usr/local/lib' PKG_CONFIG_PATH='/home/ubuntu/source/ipq806x/rootfs/LuaJIT/usr/local/lib/pkgconfig:/home/ubuntu/source/ipq806x/rootfs/ck/usr/local/lib/pkgconfig'
-
-make
-make install
-```
-
-##### Include MySQL and PostgreSQL
-```bash
-./configure --prefix=/home/ubuntu/projects/rootfs/sysbench/usr/local --with-system-luajit --with-system-ck --host=arm-linux-gnueabihf --with-mysql --with-pgsql --with-gcc-arch=armv7-a --with-mysql-includes=/usr/include/mysql --with-mysql-libs=/usr/lib/arm-linux-gnueabihf --with-pgsql-includes=/usr/include/postgresql --with-pgsql-libs=/usr/lib/arm-linux-gnueabihf CC=arm-linux-gnueabihf-gcc CFLAGS='-D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DBUILD_ARCH=32 -DSDK_VER_MIN_REQUIRED=602 -DSYNOPLAT_F_ARMV7 -fno-diagnostics-show-caret -g0 -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mtune=cortex-a9 -O2 -Wno-unused-local-typedefs -Wl,-rpath=/usr/local/lib' PKG_CONFIG_PATH='/home/ubuntu/projects/rootfs/LuaJIT/usr/local/lib/pkgconfig:/home/ubuntu/projects/rootfs/ck/usr/local/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig'f
-```
+More information can be found [here](https://help.synology.com/developer-guide/toolkit/build_stage.html).
