@@ -5,6 +5,7 @@
 #/docs/builds/
 /packages/
 /projects/
+/result_spk/
 /source/
 /toolchain/
 /toolkit_tarballs/*.dev/
