@@ -2,9 +2,9 @@
 !/packages/ExamplePackages/
 
 # Directories to ignore
+/build/
 #/docs/builds/
 /packages/
-/projects/
 /result_spk/
 /source/
 /toolchain/
