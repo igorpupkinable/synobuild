@@ -3,6 +3,7 @@
 
 # Directories to ignore
 /build/
+/build_env/
 #/docs/builds/
 /packages/
 /result_spk/
