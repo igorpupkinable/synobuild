@@ -36,6 +36,6 @@ sudo apt install schroot
 sudo rm -r /etc/schroot/chroot.d/
 sudo ln -sT ~/toolkit/schroot/ /etc/schroot/chroot.d
 sudo chown root /etc/schroot/chroot.d/*.conf
-schroot -c armada38x
+schroot --chroot=armada38x
 exit
 ```

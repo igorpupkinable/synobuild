@@ -7,7 +7,7 @@ If gcc cannot find header or library from the given path, it will then search `s
 ```shell
 $ lxc start synobuild-focal
 $ lxc exec synobuild-focal --force-interactive --user 1000 -- /bin/bash
-$ schroot -c armada38x
+$ schroot --chroot=armada38x
 $ export LANG=en_US.UTF-8
 $ cd /source/nano-7.2/
 $ ./configure --with-platform-specific-flags WITH_PLATFORM_SPECIFIC=VARIABLES
