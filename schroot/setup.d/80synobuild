@@ -1,0 +1,40 @@
+#!/bin/sh
+#
+# This script sets up symbolic links for convenience
+####################################################
+
+set -e
+
+. "$SETUP_DATA_DIR/common-data"
+. "$SETUP_DATA_DIR/common-functions"
+. "$SETUP_DATA_DIR/common-config"
+
+if [ "$VERBOSE" = "verbose" ]; then
+  CP_VERBOSE="--verbose"
+fi
+
+# Create symbolic links on start if these do not exist
+if [ $STAGE = "setup-start" ] || [ $STAGE = "setup-recover" ]; then
+
+  if [ ! -L "${CHROOT_PATH}/source" ]; then
+    ln --symbolic "/home/ubuntu/toolkit/source/" "${CHROOT_PATH}/source"
+  fi
+
+  if [ ! -L "${CHROOT_PATH}/build" ]; then
+    ln --symbolic "/home/ubuntu/toolkit/build/${CHROOT_NAME}/rootfs/" "${CHROOT_PATH}/build"
+  fi
+
+fi
+
+# Delete symbolic links on exit if these exist
+if [ $STAGE = "setup-stop" ]; then
+
+  if [ -L "${CHROOT_PATH}/source" ]; then
+    rm "${CHROOT_PATH}/source"
+  fi
+
+  if [ -L "${CHROOT_PATH}/build" ]; then
+    rm "${CHROOT_PATH}/build"
+  fi
+
+fi
