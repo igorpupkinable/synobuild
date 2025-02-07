@@ -55,13 +55,5 @@ OPTFLAGS='-mfloat-abi=hard -march=armv7-a+mp+sec -mtune=cortex-a9 -mcpu=cortex-a
 - /usr/local/arm-unknown-linux-gnueabi/lib
 - /usr/lib32
 
-```bash
-file /path/binary.so
-readelf -h /path/binary.so
-readelf -A /path/binary.so
-readelf -a /path/binary.so | grep Shared
-readelf -a /path/binary.so | grep interpreter
-```
-
 ### Manual packaging
 [Сборка deb-пакета вручную](https://habr.com/ru/articles/130868/)

@@ -58,3 +58,12 @@ You can install the cross compiled product into the destination you want in buil
 Please refer to [Compile Open Source Project: nmap](https://help.synology.com/developer-guide/examples/compile_nmap.html) for more information.
 
 More information can be found [here](https://help.synology.com/developer-guide/toolkit/build_stage.html).
+
+### Verify readelf
+```bash
+file /path/binary.so
+readelf -h /path/binary.so
+readelf -A /path/binary.so
+readelf -a /path/binary.so | grep Shared
+readelf -a /path/binary.so | grep interpreter
+```
