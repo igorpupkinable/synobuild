@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# This script unmounts Synology environment
+# https://help.synology.com/developer-guide/getting_started/prepare_environment.html#remove-environment
+###########################################
+
+set -e
+
+. "$SETUP_DATA_DIR/common-data"
+. "$SETUP_DATA_DIR/common-functions"
+. "$SETUP_DATA_DIR/common-config"
+
+if [ "$VERBOSE" = "verbose" ]; then
+  UMOUNT_VERBOSE="--verbose"
+fi
+
+if [ $STAGE = "setup-stop" ]; then
+
+  PROC_DIR="$CHROOT_DIRECTORY/proc"
+
+  if [ $(findmnt --mountpoint "$PROC_DIR") ]; then
+    umount $UMOUNT_VERBOSE "$PROC_DIR"
+  fi
+
+fi
