@@ -35,7 +35,7 @@ sudo apt update
 sudo apt install schroot
 sudo rm -r /etc/schroot/chroot.d/
 sudo ln -sT ~/toolkit/schroot/chroot.d/ /etc/schroot/chroot.d
-sudo chown root /etc/schroot/chroot.d/*.conf,
+sudo chown root /etc/schroot/chroot.d/*.conf
 sudo cp ~/toolkit/schroot/setup.d/* /etc/schroot/setup.d/
 schroot --chroot=armada38x
 exit

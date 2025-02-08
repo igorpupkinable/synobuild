@@ -10,7 +10,7 @@ set -e
 . "$SETUP_DATA_DIR/common-config"
 
 if [ "$VERBOSE" = "verbose" ]; then
-  CP_VERBOSE="--verbose"
+  RM_VERBOSE="--verbose"
 fi
 
 # Create symbolic links on start if these do not exist
@@ -30,11 +30,11 @@ fi
 if [ $STAGE = "setup-stop" ]; then
 
   if [ -L "${CHROOT_PATH}/source" ]; then
-    rm "${CHROOT_PATH}/source"
+    rm $RM_VERBOSE "${CHROOT_PATH}/source"
   fi
 
   if [ -L "${CHROOT_PATH}/build" ]; then
-    rm "${CHROOT_PATH}/build"
+    rm $RM_VERBOSE "${CHROOT_PATH}/build"
   fi
 
 fi
